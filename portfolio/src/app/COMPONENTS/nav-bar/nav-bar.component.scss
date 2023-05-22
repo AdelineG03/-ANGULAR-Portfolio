@@ -1,3 +1,20 @@
+/* ADAPTATION MOBILE MENU*/
+.activeBurger{
+  display: none;
+}
+.activeMenu{
+  display: grid;
+}
+@media all and (max-width:900px){
+  .activeBurger{
+    display: grid;
+    margin-bottom: 50px;
+  }
+  .activeMenu{
+    display: none;
+  }
+}
+
 .r-link{
     display: var(--rLinkDisplay, inline-flex) !important;
   }

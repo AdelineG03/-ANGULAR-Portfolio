@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./xp-cards.component.scss']
 })
 export class XpCardsComponent {
-  @Input() entreprise:string=""
-  @Input() poste:string=""
+  @Input() entreprise:string;
+  @Input() poste:string;
 }

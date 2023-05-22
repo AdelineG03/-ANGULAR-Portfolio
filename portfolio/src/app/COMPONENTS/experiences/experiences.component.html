@@ -1,7 +1,20 @@
 <app-divider [text]="'Expèriences'"></app-divider>
-<div class="contenair">
-    <div class="card">
-       <h2><app-xp-cards entreprise="ENTREPRISE"></app-xp-cards></h2>
-        <p><app-xp-cards poste="poste"></app-xp-cards></p>
+    <div class="contenair">
+        <div class="row">
+            <div class="col">
+                <app-xp-cards  [entreprise]="'WMG Studio'" [poste]="'Stagière développeur web'"></app-xp-cards> 
+            </div>
+            <div class=" col">
+                <app-xp-cards  [entreprise]="'Boulanger'" [poste]="'Conseillère services clients'"></app-xp-cards>
+            </div>
+            <div class="col">
+                <app-xp-cards  [entreprise]="'Intermarché'" [poste]="'Hôtesse de caisse'"></app-xp-cards>
+            </div>
+            <div class="col">
+                <app-xp-cards  [entreprise]="'Téléperformance'" [poste]="'Téléconseillère'"></app-xp-cards>
+            </div>
+            <div class="col">
+                <app-xp-cards  [entreprise]="'Ariston Coiffure'" [poste]="'Coiffeuse'"></app-xp-cards>
+            </div>
+        </div>
     </div>
-</div>    

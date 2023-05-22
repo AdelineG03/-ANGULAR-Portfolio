@@ -1,5 +1,22 @@
   @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&display=swap');
 
+/* ADAPTATION MOBILE MENU*/
+.activeBurger{
+  display: none;
+}
+.activeMenu{
+  display: grid;
+}
+@media all and (max-width:900px){
+  .activeBurger{
+    display: grid;
+    margin-bottom: 50px;
+  }
+  .activeMenu{
+    display: none;
+  }
+}  
+
 :root {
   font-size:16px;
 }
