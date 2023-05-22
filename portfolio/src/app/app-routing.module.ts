@@ -5,6 +5,7 @@ import { SkillCardsComponent } from './COMPONENTS/skill-cards/skill-cards.compon
 import { XpCardsComponent } from './COMPONENTS/xp-cards/xp-cards.component';
 import { ProjectCardsComponent } from './COMPONENTS/project-cards/project-cards.component';
 import { PortfolioComponent } from './COMPONENTS/portfolio/portfolio.component';
+import { ExperiencesComponent } from './COMPONENTS/experiences/experiences.component';
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
   },
   {
     path:'experiences',
-    component:XpCardsComponent
+    component:ExperiencesComponent
   },
   {
     path:'portfolio',

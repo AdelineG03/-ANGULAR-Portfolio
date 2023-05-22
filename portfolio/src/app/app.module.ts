@@ -13,6 +13,7 @@ import { XpCardsComponent } from './COMPONENTS/xp-cards/xp-cards.component';
 import { NavBarComponent } from './COMPONENTS/nav-bar/nav-bar.component';
 import { PortfolioComponent } from './COMPONENTS/portfolio/portfolio.component';
 import { ExperiencesComponent } from './COMPONENTS/experiences/experiences.component';
+import { ProfilCardsComponent } from './COMPONENTS/profil-cards/profil-cards.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ExperiencesComponent } from './COMPONENTS/experiences/experiences.compo
     NavBarComponent,
     PortfolioComponent,
     ExperiencesComponent,
+    ProfilCardsComponent,
   ],
   imports: [
     BrowserModule,

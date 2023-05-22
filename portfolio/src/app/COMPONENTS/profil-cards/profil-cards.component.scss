@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&display=swap');
+
+.contenair{
+    display: flex;
+    justify-content: center;
+}
+figure.snip0056 {
+  font-family: 'Handlee', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 380px;
+  max-width: 600px;
+  width: 100%;
+  background: #73a88d;
+
+}
+figure.snip0056 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+figure.snip0056 > img {
+  width: 50%;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+  position: relative;
+  float: right;
+  right: -20%;
+  z-index: 1;
+  padding-right: 50px;
+
+}
+figure.snip0056 figcaption {
+  padding: 5px;
+  position: absolute;
+  width: 50%;
+}
+
+figure.snip0056 figcaption p {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+figure.snip0056:hover > img,
+figure.snip0056.hover > img {
+  right: -12%;
+}
