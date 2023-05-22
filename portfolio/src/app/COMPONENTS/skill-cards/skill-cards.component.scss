@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&display=swap');
+
 $boxSpacing: 23px;
 $gridSize: 200px;
 $cornerRadius: $gridSize/2.1;
 
 body {
   margin: $boxSpacing;
-  font-family: "Trebuchet MS", sans-serif;
   font-size: 15.5px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+p{
+  font-family: 'handlee';
 }
 
 .container {
