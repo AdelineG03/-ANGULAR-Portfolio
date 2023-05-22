@@ -1,7 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProfilComponent as ProfilComponent } from './COMPONENTS/profil/profil.component';
+import { SkillCardsComponent } from './COMPONENTS/skill-cards/skill-cards.component';
+import { XpCardsComponent } from './COMPONENTS/xp-cards/xp-cards.component';
+import { ProjectCardsComponent } from './COMPONENTS/project-cards/project-cards.component';
+import { PortfolioComponent } from './COMPONENTS/portfolio/portfolio.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'competences',
+    component:SkillCardsComponent
+  },
+  {
+    path:'experiences',
+    component:XpCardsComponent
+  },
+  {
+    path:'portfolio',
+    component:PortfolioComponent
+  },
+  {
+    path: '',
+    redirectTo: 'profil',
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    component: ProfilComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

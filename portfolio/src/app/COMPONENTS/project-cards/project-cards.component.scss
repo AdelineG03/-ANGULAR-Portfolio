@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&display=swap');
 
   img {
-    max-width: 100%;
+    max-width: 120%;
   }
 
   p{
     color: white;
     font-family: 'handlee';
+    font-size: 14px;
     margin-top: 15px;
     
   }
   
   .container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 60vh;
 
   }
   
   .card {
     position: relative;
-    background: #6a9e83;
-    width: 400px;
-    height: 70vh;
+    background: #89c4a6;
+    width: 250px;
+    height: 350px;
     border-radius: 6px;
     --bs-card-border-color: none;
     padding: 2rem;
@@ -49,10 +49,10 @@
   
     &__title {
       color: white;
-      margin-top: 0;
+      margin-top: -20px;
       font-weight: 100;
       font-family: 'handlee';
-      font-size: 35px;
+      font-size: 24px;
     }
     
     &__content {
@@ -64,7 +64,7 @@
     &__svg {
       position: absolute;
       left: 0;
-      top: 115px;
+      top: 100px;
     }
   }
   
