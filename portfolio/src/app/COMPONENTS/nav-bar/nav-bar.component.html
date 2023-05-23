@@ -10,3 +10,21 @@
         </nav>
     </div>
 </div>
+<!-- BURGER -->
+<div class="activeBurger">
+    <input type='checkbox' id='toggle' style='display:none;'/>
+    <label class='toggle-btn toggle-btn__cross' for='toggle' >
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    </label>
+    <nav id="burgerNav" [ngClass]="click==true ? 'disable':'' ">
+    <ul>
+        <li><a [routerLink]="['/profil/']"  (click)="disableNav()">Profil</a></li>
+        <li><a [routerLink]="['/competences']" >Compétences</a></li>
+        <li><a [routerLink]="['/experiences/']" >Expèriences</a></li>
+        <li><a [routerLink]="['/portfolio/']" >Portfolio</a></li>
+    </ul>
+    </nav>
+</div>    
+
