@@ -14,7 +14,7 @@
     display: none;
   }
 }
-
+// MENU FIXE //
 .r-link{
     display: var(--rLinkDisplay, inline-flex) !important;
   }
@@ -176,4 +176,126 @@
     padding: 2rem;
     text-align: center;
   }
+  // BURGER //
+
+  :root {
+    font-size:16px;
+  }
   
+  $th_gold:#e4daa1;
+  $th_dark:#7bc59c;
+  
+
+    #burgerNav {
+      background-color:#6a9e83;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      opacity:0;
+      visibility:hidden;
+      transition:all 0.3s ease-in-out;
+      
+      ul {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        position:absolute;
+        left:50%;
+        top:170px;
+        transition:all 0.3s ease-in-out;
+        transform:translateX(-50%);
+      
+        li {
+          transform:translateY(50px);
+          opacity:0;
+          font-family: 'italianno';
+          
+          a {
+            display:block;
+            font-size:3em;
+            text-decoration:none;
+            padding:10px 0;
+            text-align:center;
+            color:#fff;
+  
+            transition:all 0.2s ease-in-out;
+            text-shadow:1px 1px 2px rgba(0,0,0,.5);
+            
+            &:hover {
+              color:$th_gold;
+            }
+          }
+        }
+      }
+    }
+  
+  .toggle-btn {
+    display:block;
+    position:fixed;
+    z-index:10;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+    
+    .bar {
+      width:30px;
+      height:2px;
+      margin:7px auto;
+      background-color:#fff;
+      transition:all 0.3s ease-in-out;
+      box-shadow:0 0 3px 1px rgba(0,0,0,.3);
+      
+      &:nth-child(2) {
+        width:20px;
+      }
+    }
+  }
+  .disable{
+    opacity:0 o !important;
+    visibility:hidden !important;
+    z-index: -9 !important;
+  }
+  #toggle:checked {
+    &~nav {
+      opacity:1;
+      visibility:visible;
+      z-index: 9;
+  
+      ul {
+        top:70px;
+        
+        li {
+          transform:translateY(0px);
+          opacity:1;
+  
+          @for $i from 1 through 4 {
+              $t: $i * 0.1;
+              &:nth-child(#{$i}) {
+                transition:all 0.3s cubic-bezier(.6,0,.8,1.5) #{$t}s; 
+              }
+            }
+        }
+      }
+    }
+    
+    &+label.toggle-btn {
+      .bar {
+        background-color:white;
+  
+        &:nth-child(2) {
+          transform:translateX(50px);
+          opacity:0;
+        }
+  
+        &:nth-child(1) {
+          transform:translateY(10px) rotate(45deg);
+        }
+  
+        &:nth-child(3) {
+          transform:translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+  }

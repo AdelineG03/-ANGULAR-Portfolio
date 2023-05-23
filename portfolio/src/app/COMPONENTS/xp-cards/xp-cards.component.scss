@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&display=swap');
+
 .contenair{
   display: flex;
   flex-direction: row;
@@ -19,11 +21,13 @@
   .card h2 {
     z-index: 1;
     color: white;
+    font-family: 'Handlee', Arial, sans-serif;
     font-size: 1.2em;
   }
   .card p{
     z-index: 1;
     color: white;
+    font-family: 'handlee', Arial, sans-serif;
     font-size: 0.9em;
   }
   

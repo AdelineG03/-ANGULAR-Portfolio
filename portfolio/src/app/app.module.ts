@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BurgerMenuComponent } from './COMPONENTS/burger-menu/burger-menu.component';
 import { DividerComponent } from './COMPONENTS/divider/divider.component';
 import { FooterComponent } from './COMPONENTS/footer/footer.component';
 import { ProfilComponent } from './COMPONENTS/profil/profil.component';
@@ -18,7 +17,6 @@ import { ProfilCardsComponent } from './COMPONENTS/profil-cards/profil-cards.com
 @NgModule({
   declarations: [
     AppComponent,
-    BurgerMenuComponent,
     DividerComponent,
     FooterComponent,
     ProfilComponent,
